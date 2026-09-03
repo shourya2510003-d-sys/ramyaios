@@ -26,7 +26,7 @@ export function ThemeToggle() {
       </button>
 
       {/* Dropdown Menu */}
-      <div className="absolute right-0 mt-2 w-36 bg-panel border border-border-subtle rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+      <div className="absolute right-0 bottom-full mb-2 w-36 bg-panel border border-border-subtle rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
         <button 
           onClick={() => setTheme('light')}
           className={`w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors hover:bg-panel-hover ${theme === 'light' ? 'text-yellow-500 font-bold bg-panel-hover' : 'text-text-main'}`}
